@@ -1,82 +1,39 @@
-# Aeterna.ia — Landing Page
+# Aeterna.ia — A Gênese da Inteligência Soberana
 
-> A Gênese da Inteligência Soberana.
+> A primeira infraestrutura digital capaz de pensar, validar, evoluir e se auto-financiar.
 
-Landing page para a rodada de captação Friends & Family da Aeterna.ia.
-Construída com React + Vite + Tailwind CSS + Framer Motion.
+Este repositório contém o código-fonte da Landing Page oficial para a rodada de captação institucional (Startup Pre-Seed Round) da Aeterna.ia.
 
-## Stack
+## 🛡️ Tese de Investimento (Modelo Equity-Free)
 
-- **React 18** — UI
-- **Vite 5** — Build & Dev Server
-- **Tailwind CSS 3** — Estilização utilitária
-- **Framer Motion 11** — Animações
+A Aeterna.ia opera sob um modelo de **Financiamento Baseado em Receita (Revenue-Based Financing)** atrelado a um contrato de mútuo de alto risco. O projeto foi estruturado para manter 100% da soberania com o Fundador, operando sob 4 diretrizes inegociáveis:
 
-## Estrutura do Projeto
+1. **Risco Total (All-in):** O capital financia a construção da infraestrutura de IA. Não há garantias físicas ou bancárias.
+2. **Zero Equity:** Os investidores não adquirem poder de voto, controle de diretoria ou participação societária. A Aeterna.ia permanece 100% soberana.
+3. **Participação em Resultados (P&L):** O retorno baseia-se na devolução do Principal + um percentual de lucro atrelado à receita autônoma gerada na Fase 2 do projeto.
+4. **Opção de Recompra (Call Option):** O Fundador retém o direito de recompra do contrato a qualquer momento, mediante pagamento de prêmio pré-acordado, garantindo a liquidez antecipada ao investidor.
 
-```
-aeterna-ia/
+## 🚀 Arquitetura do Projeto
+
+A página foi construída com foco em performance extrema e design de alta conversão (Deep Tech padrão):
+
+- **Core:** React 18 + Vite 5
+- **Estilização:** Tailwind CSS 3 (Utilitário)
+- **Animações Fluidas:** Framer Motion 11
+- **Tipografia Premium:** DM Sans & Inter (Google Fonts)
+- **Deploy Automático:** CI/CD via Netlify (Edge)
+
+## 📁 Estrutura do Repositório
+
+```text
+aeterna-pitch/
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── App.jsx        ← Componente principal (toda a página)
-│   ├── main.jsx       ← Entry point React
-│   └── index.css      ← Tailwind directives + reset
-├── index.html
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
-├── netlify.toml       ← Config de deploy (SPA redirect)
+│   ├── App.jsx        ← Componente principal (UI + Framer Motion)
+│   ├── main.jsx       ← Entry point do React
+│   └── index.css      ← Diretrizes do Tailwind
+├── index.html         ← Injeção de Fontes e Ponto de Montagem
+├── tailwind.config.js ← Mapeamento de Classes
+├── netlify.toml       ← Configuração de Deploy (SPA Redirect)
 └── package.json
-```
-
-## Rodando localmente
-
-```bash
-# Instalar dependências
-npm install
-
-# Iniciar servidor de desenvolvimento
-npm run dev
-
-# Build de produção
-npm run build
-
-# Preview do build
-npm run preview
-```
-
-## Deploy no Netlify
-
-### Via GitHub (recomendado)
-
-1. Suba este repositório no GitHub
-2. Acesse [app.netlify.com](https://app.netlify.com)
-3. Clique em **"Add new site" → "Import an existing project"**
-4. Conecte ao GitHub e selecione o repositório
-5. As configurações são detectadas automaticamente via `netlify.toml`:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
-6. Clique em **Deploy site**
-
-### Via Netlify CLI
-
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --build --prod
-```
-
-## Personalizações Rápidas
-
-| O que mudar | Onde |
-|---|---|
-| Email do CTA | `src/App.jsx` → `href="mailto:..."` |
-| Título / textos | `src/App.jsx` → seções Hero, Captacao |
-| Cores de acento | Buscar por `#00D2C8`, `#7C3AED`, `#10B981` |
-| Fases do Roadmap | Array `PHASES` em `src/App.jsx` |
-| Cards da Arquitetura | Array `PILLARS` em `src/App.jsx` |
-
----
-
-**© 2025 Aeterna.ia** — Construindo soberania, uma iteração por vez.
