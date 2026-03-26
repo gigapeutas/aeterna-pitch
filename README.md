@@ -27,13 +27,15 @@ A página foi construída com foco em performance extrema e design de alta conve
 
 ```text
 aeterna-pitch/
-├── public/
-│   └── favicon.svg
 ├── src/
-│   ├── App.jsx        ← Componente principal (UI + Framer Motion)
-│   ├── main.jsx       ← Entry point do React
-│   └── index.css      ← Diretrizes do Tailwind
-├── index.html         ← Injeção de Fontes e Ponto de Montagem
-├── tailwind.config.js ← Mapeamento de Classes
-├── netlify.toml       ← Configuração de Deploy (SPA Redirect)
-└── package.json
+│   ├── App.jsx            ← Componente principal (UI + Framer Motion)
+│   ├── index.css          ← Diretrizes do Tailwind
+│   └── main.jsx           ← Entry point do React
+├── .gitignore             ← Regras de ignorar do Git
+├── index.html             ← Injeção de Fontes e Ponto de Montagem
+├── netlify.toml           ← Configuração de Deploy (SPA Redirect)
+├── package.json           ← Dependências do projeto
+├── postcss.config.js      ← Configuração do PostCSS
+├── README.md              ← Documentação oficial da tese
+├── tailwind.config.js     ← Mapeamento de Classes (Tailwind)
+└── vite.config.js         ← Configuração do Bundler Vite
